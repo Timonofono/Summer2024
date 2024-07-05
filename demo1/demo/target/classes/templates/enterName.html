@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Enter Name</title>
+  <link rel="stylesheet" href="/css/styles.css" type="text/css">
+</head>
+<body>
+<form action="/result" method="post">
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="firstName" required><br>
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="lastName" required><br>
+  <label for="phoneNumber">Phone Number:</label>
+  <input type="text" id="phoneNumber" name="phoneNumber" required><br>
+  <button type="submit">Submit</button>
+</form>
+<form action="/allContacts" method="get">
+  <button type="submit">Show contacts</button>
+</form>
+</body>
+</html>
